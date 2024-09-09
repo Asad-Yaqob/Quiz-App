@@ -23,7 +23,7 @@ class SummaryData extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color: (data['question_index'] as int) % 2 == 0
+                      color: data['user_answer'] == data['correct_answer']  
                           ? Colors.blue
                           : Colors.purple,
                     ),
